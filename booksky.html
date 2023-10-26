@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="booksky.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+       <div class="head-book"> <h1>Booksky</h1></div>
+       <div class="link-logo">
+        <ul>
+            <li><a href="https://www.instagram.com/invites/contact/?i=1tqdcqtq4tcvu&utm_content=3yyk3gr"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100037498090230&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://github.com/kavikumar15"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/kavi-kumar-s-952275266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+       </div>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>ROBERT</h5>
+            <p>"Rich Dad Poor Dad" is a personal finance and self-help book written by Robert Kiyosaki. It was first published in 1997 and has since become one of the best-selling personal finance books of all time. The book presents financial education and advice through the lens of Kiyosaki's two "dads."</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+        <div class="book-container">
+            <h2>WINGS OF FIRE</h2>
+            <h5>APJ ABDUL KALAM</h5>
+            <p>Summary of the Book One of the most inspiring and popular autobiographies to read is Late Abdul Kalam’s Wings of Fire. In this book, the former president shares his personal experiences and minutest details of his life. It narrates his life, right from the former late president’s rise from humble beginnings to his vision for the country in the year 2020.
+            </p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+        <div class="book-container">
+            <h2>The Automatic Millionaire</h2>
+            <h5>David Bach</h5>
+            <p>The Automatic Millionaire shows readers how to change their financial practices and even their lives, the simple and automatic way. The book begins with a powerful story about an average Canadian couple — he’s a low-level manager, she's a beautician — whose joint income never exceeds $55,000 a year, yet who somehow manage to own two homes debt-free, put two kids through college, and retire at fifty-five with more than $1 million in savings.
+                </p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+        
+        <div class="book-container">
+            <h2>கடல் புறா</h2>
+            <h5> சாண்டில்யன்</h5>
+            <p>கடல் புறா எழுத்தாளர் சாண்டில்யன் எழுதிய ஒரு வரலாற்றுப் புதினம். இது சோழரின் படைத்தளபதியான கருணாகரத் தொண்டைமானை கதைத் தலைவனாகக் கொண்ட புதினமாகும். சிறீ விஜய நாட்டில் இருந்து சோழர் உதவி தேடி வந்த இளவரசருக்கும் அவரது மகளுக்கும் சோழ இளவரசரான அநபாயரும் அவரது படைத்தலைவரான கருணாகர பல்லவனும் உதவுவது கதையின் ஒரு பகுதியாகும்</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+        
+
+
+    </div>
+
+    <div class="popup-overlay"> </div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+
+    </div>
+
+    <button class="add-button" id="add-popup-button" >+</button>
+    <script src="booksky.js"></script>
+</body>
+</html>
