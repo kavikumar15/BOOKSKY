@@ -1,2 +1,4 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Set to LF (Unix-style line endings) for HTML, CSS, and JavaScript files
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
