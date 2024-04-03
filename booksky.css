@@ -45,6 +45,9 @@ body{
 .book-container{
     padding: 15px;
     width: 25%;
+    height: auto;
+    word-wrap: break-word;
+    overflow: hidden;
     background-color: black;
     color: white;
     border-radius: 10px;
